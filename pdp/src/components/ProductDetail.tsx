@@ -6,7 +6,7 @@ import CardContent from "@mui/material/CardContent/CardContent";
 import CardMedia from "@mui/material/CardMedia/CardMedia";
 import Typography from "@mui/material/Typography/Typography";
 import { Product } from "home/models/Product";
-import { ProductService } from "home/services/product.service";
+import ProductService from "home/services/ProductService";
 import CircularProgress from "@mui/material/CircularProgress/CircularProgress";
 
 type Props = {};
