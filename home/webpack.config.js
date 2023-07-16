@@ -50,7 +50,7 @@ module.exports = (_, argv) => ({
         "./components/Header": "./src/components/Header",
         "./components/Footer": "./src/components/Footer",
         "./hoc/withLayout": "./src/hoc/withLayout",
-        "./services/ProductService": "./src/services/product.service",
+        "./services/ProductService": "./src/services/ProductService",
         "./models/Product": "./src/models/Product",
       },
       shared: {

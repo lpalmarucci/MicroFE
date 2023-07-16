@@ -1,6 +1,6 @@
 import { Product } from "../models/Product";
 
-export class ProductService {
+export default class ProductService {
   static formatCurrency = new Intl.NumberFormat("it-IT", {
     currency: "EUR",
     style: "currency",
@@ -10,6 +10,6 @@ export class ProductService {
   }
 
   static getProductById(id: number): Promise<Product> {
-    return fetch(process.env.API_SERVER + `/products/${id})`).then((res) => res.json());
+    return fetch(process.env.API_SERVER + `/products/${id}`).then((res) => res.json());
   }
 }
