@@ -52,6 +52,7 @@ module.exports = (_, argv) => ({
         "./hoc/withLayout": "./src/hoc/withLayout",
         "./services/ProductService": "./src/services/ProductService",
         "./models/Product": "./src/models/Product",
+        "./components/SplashScreen": "./src/components/SplashScreen",
       },
       shared: {
         ...deps,

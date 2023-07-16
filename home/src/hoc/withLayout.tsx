@@ -13,7 +13,7 @@ const withLayout = (Component: ComponentType) => (props: IProps) => {
     <React.Fragment>
       <div className="flex flex-col min-h-screen text-3xl mx-auto max-w-6xl dark:bg-gray-700 text-white">
         <Header setToggleMenu={setToggleMenu} />
-        <main className="flex flex-grow">
+        <main className="flex flex-grow relative">
           <Component {...props} />
         </main>
         <Footer />
