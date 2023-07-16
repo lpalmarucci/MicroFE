@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 
 import "./index.scss";
 import withLayout from "home/hoc/withLayout";
-import ProductDetail from "./components/ProductDetail";
+import { withRoutingModule } from "./routes";
 
-const App = withLayout(() => <ProductDetail />);
+const App = withLayout(withRoutingModule);
 ReactDOM.render(<App />, document.getElementById("app"));
