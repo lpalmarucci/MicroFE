@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import ReactDOM from "react-dom";
 
 import "./index.scss";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
 import HomeContent from "./components/HomeContent";
 import withLayout from "./hoc/withLayout";
 
