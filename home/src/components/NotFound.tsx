@@ -1,13 +1,20 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 
-const PageNotFound = () => {
+const defaultTitle: string = "Risorsa non trovata";
+
+interface IProps {
+  title?: string;
+}
+
+const PageNotFound = (props: IProps) => {
   return (
-    <Box>
+    <Container sx={{ textAlign: "center", display: "flex", flexDirection: "column", justifyContent: "center" }}>
       <Typography
         variant="h1"
         fontWeight={700}
-        sx={{ fontSize: { md: 220, xs: 150 } }}
+        color={"black"}
+        sx={{ fontSize: { md: 150, xs: 100 } }}
       >
         404
       </Typography>
@@ -15,11 +22,12 @@ const PageNotFound = () => {
         variant="h3"
         fontWeight={700}
         whiteSpace="nowrap"
-        sx={{ fontSize: { md: 110, xs: 35 } }}
+        color={"black"}
+        sx={{ fontSize: { md: 60, xs: 20 } }}
       >
-        Pagina non trovata
+        {props.title ?? defaultTitle}
       </Typography>
-    </Box>
+    </Container>
   );
 };
 

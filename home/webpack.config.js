@@ -53,6 +53,7 @@ module.exports = (_, argv) => ({
         "./services/ProductService": "./src/services/ProductService",
         "./models/Product": "./src/models/Product",
         "./components/SplashScreen": "./src/components/SplashScreen",
+        "./components/NotFound": "./src/components/NotFound",
       },
       shared: {
         ...deps,
