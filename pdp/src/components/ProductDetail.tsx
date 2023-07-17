@@ -3,8 +3,7 @@ import { Product } from "home/models/Product";
 import ProductService from "home/services/ProductService";
 import CircularProgress from "@mui/material/CircularProgress/CircularProgress";
 import { useParams } from "react-router-dom";
-import SplashScreen from "home/components/SplashScreen";
-import PageNotFound from "home/components/NotFound";
+import NotFound from "home/components/NotFound";
 
 type Props = {};
 
@@ -20,6 +19,8 @@ const ProductDetail = (props: Props) => {
       .finally(() => setLoading(false));
   }, []);
   if (loading) return <CircularProgress size={10} />;
+
+  if (!product) return <NotFound title="Product not found" />;
 
   return (
     <div className="grid grid-cols-2 gap-5">
