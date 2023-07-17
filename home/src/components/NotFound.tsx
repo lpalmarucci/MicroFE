@@ -7,7 +7,7 @@ interface IProps {
   title?: string;
 }
 
-const PageNotFound = (props: IProps) => {
+const NotFound = (props: IProps) => {
   return (
     <Container sx={{ textAlign: "center", display: "flex", flexDirection: "column", justifyContent: "center" }}>
       <Typography
@@ -31,4 +31,4 @@ const PageNotFound = (props: IProps) => {
   );
 };
 
-export default PageNotFound;
+export default NotFound;
