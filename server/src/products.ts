@@ -1,11 +1,4 @@
-export interface Product {
-  id: number;
-  name: string;
-  price: number;
-  description: string;
-  image: string;
-  longDescription: string;
-}
+import { Product } from './modules/products/models';
 
 const products: Product[] = [
   {
